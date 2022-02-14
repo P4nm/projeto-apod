@@ -1,8 +1,24 @@
+* {
+    /* height: 100%;
+    width: 100%; */
+    margin: 0; /*espaçamento externo*/
+    padding: 0%; /*espeçamento interno*/
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
 body {
+    text-align: center;
     font-family: monospace;
     color: darkgoldenrod;
     background-image: url(../imagens/universo.jpg);
     background-repeat: no repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 .cabeçalho {
@@ -10,4 +26,42 @@ body {
     flex-direction: row;
     justify-content: flex-end;
 }
+
+.container {
+    margin: 4em auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+}
+
+a {
+    display: flex;
+    justify-content: baseline;
+    justify-content: right;
+    color: aliceblue;
+    font-family: monospace;
+}
+
+.rodape {
+    position: absolute;
+    bottom: 5%; /*pra baixo*/
+}
+
+.resultados {
+    width: 800px;
+    height: 600px;
+    border: 2px solid white;
+    box-sizing: border-box; /*nao mudar de tamanho a borda*/
+}
+
+#img {
+    width: 100%;
+    height: 100%;
+}
+
+#video {
+    width: 100%;
+    height: 100%;
+}
+
 

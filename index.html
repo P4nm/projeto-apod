@@ -6,33 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image" href="./Imagens/telescopio.png">
     <link rel="stylesheet" href="./css/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" defer></script> 
+    <script src="./js/script.js" defer></script>
     <title>Apod</title>
 </head>
 <body>
-    <div class="cabeçalho">
-        <header class="documentacao">
-            Documentação
-        </header>
-    </div>
-    <br>
+    
     <main class="container">
         <h1>Astronomy Picture of the day</h1> 
-    </main>
 
     <div class="pagina-inicial">
         <label for="data_nascimento"><b>Escolha uma data:</b></label>
         <input type="date" name="date" id="date" required>
         <button id="button" value="button">Ir além!</button>
+        <div class="resultados">
+            <image id="img" src=" "></image> <!--src propriedade de link-->
+            <iframe id="video" src=" " frameborder="0"></iframe>
+        </div>
     </div>
 
-    <div class="resultados">
-
-    </div>
-    <br><br>
-
-    <footer>
+    <footer class="rodape">
         <a href="https://github.com/P4nm">Direitos reservados - Panmela Tonassi ©</a>
-     </footer>
+    </footer>
+        <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> 
+        <script src="./js/script.js"></script> -->
+    </main>
     
 </body>
 </html>
